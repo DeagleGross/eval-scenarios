@@ -10,6 +10,6 @@ app.MapOpenApi();
 app.UseHttpsRedirection();
 
 app.MapGet("/health", () => Results.Ok("Healthy!"))
-   .WithName("GetWeatherForecast");
+   .WithName("Health");
 
 app.Run();
